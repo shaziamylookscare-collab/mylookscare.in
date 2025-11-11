@@ -1,3 +1,4 @@
+
 import { getPostBySlug, posts, type Post } from '@/lib/blog-data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
   return {
-    title: `${post.title} | Mirrored Beauty`,
+    title: `${post.title} | Mylookscare`,
     description: post.excerpt,
   };
 }

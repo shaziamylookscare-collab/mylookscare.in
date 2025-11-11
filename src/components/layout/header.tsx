@@ -32,7 +32,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-headline text-2xl font-bold">Mirrored Beauty</span>
+          <span className="font-headline text-2xl font-bold">Mylookscare</span>
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
@@ -69,7 +69,7 @@ export default function Header() {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-8">
                    <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
-                    <span className="font-headline text-xl font-bold">Mirrored Beauty</span>
+                    <span className="font-headline text-xl font-bold">Mylookscare</span>
                   </Link>
                   <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)} aria-label="Close menu">
                     <X className="h-5 w-5" />

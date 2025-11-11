@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 
@@ -23,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link href="/" className="text-2xl font-bold font-headline">
-              Mirrored Beauty
+              Mylookscare
             </Link>
             <p className="mt-4 text-muted-foreground text-sm">
               Your trusted partner in beauty and wellness. We offer state-of-the-art cosmetic treatments to help you look and feel your best.
@@ -67,7 +68,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="text-sm text-muted-foreground text-center">
-            &copy; {new Date().getFullYear()} Mirrored Beauty. All rights reserved.
+            &copy; {new Date().getFullYear()} Mylookscare. All rights reserved.
           </p>
         </div>
       </div>

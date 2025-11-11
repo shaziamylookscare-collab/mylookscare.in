@@ -1,3 +1,4 @@
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -8,13 +9,13 @@ const testimonials = [
   {
     id: 'testimonial-1',
     name: 'Jessica Miller',
-    quote: "The results from my treatment are incredible! The staff was so professional and made me feel comfortable throughout the entire process. I can't recommend Mirrored Beauty enough.",
+    quote: "The results from my treatment are incredible! The staff was so professional and made me feel comfortable throughout the entire process. I can't recommend Mylookscare enough.",
     rating: 5,
   },
   {
     id: 'testimonial-2',
     name: 'David Chen',
-    quote: "I was hesitant at first, but the team at Mirrored Beauty explained everything clearly. My skin has never looked better. A truly five-star experience from start to finish.",
+    quote: "I was hesitant at first, but the team at Mylookscare explained everything clearly. My skin has never looked better. A truly five-star experience from start to finish.",
     rating: 5,
   },
   {

@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -21,7 +22,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 p-4 max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold !font-headline leading-tight drop-shadow-lg">
-          Welcome to Mirrored Beauty Clinic
+          Welcome To Mylookscare Clinic
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">
           Your trusted partner in beauty and wellness. Discover a new you with our expert care.

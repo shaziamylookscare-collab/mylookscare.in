@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -27,7 +28,7 @@ export default function ContactSection() {
               <div className="space-y-4 text-lg">
                 <div className="flex items-start gap-4">
                   <Mail className="h-6 w-6 text-primary mt-1" />
-                  <span>contact@mirroredbeauty.com</span>
+                  <span>contact@mylookscare.com</span>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="h-6 w-6 text-primary mt-1" />
