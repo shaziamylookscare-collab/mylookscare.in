@@ -1,3 +1,94 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A bright and modern clinic interior.",
+      "imageUrl": "https://images.unsplash.com/photo-1704455306925-1401c3012117?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjI4NjUzNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic interior"
+    },
+    {
+      "id": "service-1",
+      "description": "Laser hair removal procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1577746838851-816a43ca8733?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYXNlciUyMGhhaXIlMjByZW1vdmFsfGVufDB8fHx8MTc2Mjg2NTM2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser hair removal"
+    },
+    {
+      "id": "service-2",
+      "description": "A person receiving a skin rejuvenation treatment.",
+      "imageUrl": "https://images.unsplash.com/photo-1700760933574-9f0f4ea9aa3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxza2luJTIwcmVqdXZlbmF0aW9ufGVufDB8fHx8MTc2Mjg2NTM2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "skin rejuvenation"
+    },
+    {
+      "id": "service-3",
+      "description": "Botox and fillers treatment.",
+      "imageUrl": "https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmYWNpYWwlMjB0cmVhdG1lbnR8ZW58MHx8fHwxNzYyODY1MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "facial treatment"
+    },
+    {
+      "id": "service-4",
+      "description": "A relaxing chemical peel session.",
+      "imageUrl": "https://images.unsplash.com/photo-1570615541379-e6b7ab6d4eb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGVtaWNhbCUyMHBlZWx8ZW58MHx8fHwxNzYyODY1MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chemical peel"
+    },
+    {
+      "id": "service-5",
+      "description": "Microneedling procedure close-up.",
+      "imageUrl": "https://picsum.photos/seed/service5/600/400",
+      "imageHint": "microneedling"
+    },
+    {
+      "id": "service-6",
+      "description": "Hydrafacial treatment for glowing skin.",
+      "imageUrl": "https://images.unsplash.com/photo-1746467925515-2d4472c2eab5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxoeWRyYWZhY2lhbHxlbnwwfHx8fDE3NjI4NjUzNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hydrafacial"
+    },
+    {
+      "id": "about-us-image",
+      "description": "The professional and friendly team of the clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZWRpY2FsJTIwdGVhbXxlbnwwfHx8fDE3NjI4NjMxMDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical team"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a happy female client.",
+      "imageUrl": "https://images.unsplash.com/photo-1711645169736-53327e726205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYyODY1MTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a satisfied male client.",
+      "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2MjgyNDIwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of another happy client.",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjI4MDgwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "blog-1",
+      "description": "Skincare products on a clean background.",
+      "imageUrl": "https://images.unsplash.com/photo-1679394270597-e90694d70350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxza2luY2FyZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2Mjc1MDQ2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "skincare products"
+    },
+    {
+      "id": "blog-2",
+      "description": "A woman applying a face mask.",
+      "imageUrl": "https://images.unsplash.com/photo-1516815989420-9cb5ef0fce78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYWNlJTIwbWFza3xlbnwwfHx8fDE3NjI3NjQxMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "face mask"
+    },
+    {
+      "id": "blog-3",
+      "description": "Healthy food for good skin.",
+      "imageUrl": "https://images.unsplash.com/photo-1493770348161-369560ae357d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoZWFsdGh5JTIwZm9vZHxlbnwwfHx8fDE3NjI3OTA0NTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "healthy food"
+    },
+    {
+      "id": "contact-map",
+      "description": "A map showing the location of the clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1717343824623-06293a62a70d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2MjgxODc1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    }
+  ]
 }
