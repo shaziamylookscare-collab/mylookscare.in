@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 const socialLinks = [
   { icon: Facebook, href: '#' },
@@ -24,7 +25,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link href="/" className="text-2xl font-bold font-headline">
-              Mylookscare
+              <Image src="https://myloolookscare-images.vercel.app/lookscare.webp" alt="Mylookscare logo" width={140} height={40} />
             </Link>
             <p className="mt-4 text-muted-foreground text-sm">
               Your trusted partner in beauty and wellness. We offer state-of-the-art cosmetic treatments to help you look and feel your best.

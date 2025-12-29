@@ -8,6 +8,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/#home', label: 'Home' },
@@ -32,7 +33,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-headline text-2xl font-bold">Mylookscare</span>
+          <Image src="https://myloolookscare-images.vercel.app/lookscare.webp" alt="Mylookscare logo" width={140} height={40} />
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
@@ -70,7 +71,7 @@ export default function Header() {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-8">
                    <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
-                    <span className="font-headline text-xl font-bold">Mylookscare</span>
+                    <Image src="https://myloolookscare-images.vercel.app/lookscare.webp" alt="Mylookscare logo" width={140} height={40} />
                   </Link>
                 </div>
                 <nav className="flex flex-col gap-6 text-lg">
