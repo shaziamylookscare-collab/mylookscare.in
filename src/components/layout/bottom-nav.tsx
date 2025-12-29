@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Home, Stethoscope, Calendar, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useEffect, useState } from 'react';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -28,13 +29,29 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 const navLinks = [
   { href: '/#services', label: 'Treatments', icon: Stethoscope },
   { href: '/#contact-us', label: 'Appointment', icon: Calendar },
-  { href: '/#home', label: 'Home', icon: Home },
+  { href: '/', label: 'Home', icon: Home },
   { href: '/#contact-us', label: 'Contact', icon: Mail },
   { href: 'https://wa.me/1234567890', label: 'WhatsApp', icon: WhatsAppIcon, external: true },
 ];
 
 export default function BottomNav() {
   const pathname = usePathname();
+  const [activeHash, setActiveHash] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setActiveHash(window.location.hash);
+
+      const handleHashChange = () => {
+        setActiveHash(window.location.hash);
+      };
+
+      window.addEventListener('hashchange', handleHashChange);
+      return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+      };
+    }
+  }, []);
 
   const getLink = (href: string) => {
     if (pathname !== '/' && href.startsWith('/#')) {
@@ -44,32 +61,41 @@ export default function BottomNav() {
   };
 
   const isLinkActive = (href: string) => {
-    if (href === '/#home') return pathname === '/';
-    // We check the pathname part of the href, ignoring the hash.
-    const cleanHref = href.split('#')[0];
-    return pathname === cleanHref;
-  }
+    if (href === '/') {
+      return pathname === '/' && (activeHash === '' || activeHash === '#home');
+    }
+    if (href.startsWith('/#')) {
+      const hash = href.substring(1); // e.g. #services
+      return pathname === '/' && activeHash === hash;
+    }
+    return pathname.startsWith(href) && href !== '/';
+  };
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm md:hidden">
       <div className="flex h-16 items-center justify-around">
-        {navLinks.map(({ href, label, icon: Icon, external }) => (
-          <Link
-            key={label}
-            href={external ? href : getLink(href)}
-            target={external ? '_blank' : undefined}
-            rel={external ? 'noopener noreferrer' : undefined}
-            className={cn(
-              'flex flex-col items-center gap-1 p-2 text-xs transition-colors hover:text-primary',
-              isLinkActive(href)
-                ? 'text-primary'
-                : 'text-muted-foreground'
-            )}
-          >
-            <Icon className="h-5 w-5" />
-            <span>{label}</span>
-          </Link>
-        ))}
+        {navLinks.map(({ href, label, icon: Icon, external }) => {
+          // Special case for duplicate Contact/Appointment links
+          const effectiveHref = label === 'Contact' ? '/#contact-us' : href;
+          
+          return (
+            <Link
+              key={label}
+              href={external ? effectiveHref : getLink(effectiveHref)}
+              target={external ? '_blank' : undefined}
+              rel={external ? 'noopener noreferrer' : undefined}
+              className={cn(
+                'flex flex-col items-center gap-1 p-2 text-xs transition-colors hover:text-primary',
+                isLinkActive(effectiveHref)
+                  ? 'text-primary'
+                  : 'text-muted-foreground'
+              )}
+            >
+              <Icon className="h-5 w-5" />
+              <span>{label}</span>
+            </Link>
+          );
+        })}
       </div>
     </nav>
   );
