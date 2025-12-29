@@ -4,6 +4,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
+import BottomNav from '@/components/layout/bottom-nav';
 
 export const metadata: Metadata = {
   title: 'Mylookscare',
@@ -31,8 +32,9 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <Header />
-        <main>{children}</main>
+        <main className="pb-16 md:pb-0">{children}</main>
         <Footer />
+        <BottomNav />
         <Toaster />
       </body>
     </html>
