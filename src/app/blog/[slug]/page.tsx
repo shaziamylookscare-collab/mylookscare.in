@@ -77,26 +77,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           />
         </article>
       </div>
-      <style jsx global>{`
-        .prose h2 {
-          @apply font-headline text-2xl sm:text-3xl font-bold mt-12 mb-4;
-        }
-        .prose h3 {
-          @apply font-headline text-xl sm:text-2xl font-bold mt-8 mb-4;
-        }
-        .prose p {
-          @apply mb-4 leading-relaxed;
-        }
-        .prose ul {
-          @apply list-disc list-inside mb-4 pl-4;
-        }
-        .prose li {
-          @apply mb-2;
-        }
-        .prose a {
-          @apply text-primary hover:underline;
-        }
-      `}</style>
     </div>
   );
 }
