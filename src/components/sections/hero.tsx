@@ -25,7 +25,7 @@ export default function HeroSection() {
           mylookscare
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">
-          Your trusted partner in beauty and wellness. Discover a new you with our expert care.
+          skin clinic
         </p>
         <div className="mt-8 flex justify-center">
           <Button size="lg" asChild>
