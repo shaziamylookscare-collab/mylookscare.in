@@ -72,9 +72,6 @@ export default function Header() {
                    <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
                     <span className="font-headline text-xl font-bold">Mylookscare</span>
                   </Link>
-                  <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)} aria-label="Close menu">
-                    <X className="h-5 w-5" />
-                  </Button>
                 </div>
                 <nav className="flex flex-col gap-6 text-lg">
                   {navLinks.map(({ href, label }) => (
