@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -22,8 +22,8 @@ export default function Header() {
   const pathname = usePathname();
 
   const getLink = (href: string) => {
-    if (pathname.startsWith('/blog')) {
-      return href.startsWith('/#') ? `/${href}` : href;
+    if (pathname !== '/' && href.startsWith('/#')) {
+      return `/${href}`;
     }
     return href;
   };
@@ -66,6 +66,7 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-8">
                    <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
