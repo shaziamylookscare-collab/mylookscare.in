@@ -8,24 +8,24 @@
   }
   
   :root {
-    --background: 21 71% 91%; /* Pale Peach */
+    --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
-    --card: 21 50% 86%; /* Lighter Pale Peach */
+    --card: 0 0% 98%;
     --card-foreground: 240 10% 3.9%;
-    --popover: 21 50% 86%;
+    --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
     --primary: 0 83% 75%; /* Soft Coral */
     --primary-foreground: 240 10% 3.9%;
     --secondary: 270 26% 86%; /* Muted Lavender */
     --secondary-foreground: 240 10% 3.9%;
-    --muted: 21 40% 88%;
+    --muted: 240 5% 96%;
     --muted-foreground: 240 4% 46%;
-    --accent: 270 26% 86%; /* Muted Lavender */
+    --accent: 240 5% 96%;
     --accent-foreground: 240 10% 3.9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 21 20% 75%;
-    --input: 21 20% 75%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
     --ring: 0 83% 75%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
