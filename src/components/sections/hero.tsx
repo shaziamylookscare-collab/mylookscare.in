@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 p-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold !font-headline leading-tight drop-shadow-lg">
-          My Looks Care – Premier Hair & Skin Clinic in Panjim, Goa
+          Best Hair Transplant And Cosmetic Clinic of Panjim Goa
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md">
           Welcome to My Looks Care, a leading hair transplant and cosmetic skin clinic in Panjim, Goa offering trusted solutions for hair restoration, laser skin treatments, and personalized cosmetic care.
