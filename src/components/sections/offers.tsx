@@ -54,14 +54,14 @@ export default function OffersSection() {
                 <CarouselItem key={offer.id} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-1">
                     <Card className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
-                       <div className="aspect-w-16 aspect-h-9">
+                       <div className="overflow-hidden">
                         {offerImage && (
                           <Image
                             src={offerImage.imageUrl}
                             alt={offerImage.description}
                             width={600}
                             height={338}
-                            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                            className="object-cover w-full aspect-[16/9] group-hover:scale-105 transition-transform duration-300"
                             data-ai-hint={offerImage.imageHint}
                           />
                         )}
