@@ -12,17 +12,17 @@ const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const stats = [
     {
-        icon: <Award className="h-10 w-10 text-primary" />,
+        icon: <Award className="h-8 w-8 text-primary" />,
         value: '21+',
         label: 'Years of Experience',
     },
     {
-        icon: <Smile className="h-10 w-10 text-primary" />,
+        icon: <Smile className="h-8 w-8 text-primary" />,
         value: '25,000+',
         label: 'Happy Clients',
     },
     {
-        icon: <GoogleIcon className="h-10 w-10" />,
+        icon: <GoogleIcon className="h-8 w-8" />,
         value: '4.9',
         label: 'Google Rating',
     },
@@ -32,12 +32,12 @@ export default function StatsGridSection() {
     return (
         <section className="pb-16 sm:pb-24 bg-card">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-row justify-center items-center gap-x-8 gap-y-4 text-center">
+                <div className="flex flex-row justify-center items-center gap-x-2 sm:gap-x-8 text-center">
                     {stats.map((stat, index) => (
-                        <div key={index} className="flex flex-col items-center p-2">
-                            <div className="mb-2">{stat.icon}</div>
-                            <p className="text-3xl font-extrabold text-foreground">{stat.value}</p>
-                            <p className="text-base text-muted-foreground whitespace-nowrap">{stat.label}</p>
+                        <div key={index} className="flex flex-col items-center p-1 sm:p-2">
+                            <div className="mb-1">{stat.icon}</div>
+                            <p className="text-2xl font-extrabold text-foreground">{stat.value}</p>
+                            <p className="text-xs sm:text-base text-muted-foreground whitespace-nowrap">{stat.label}</p>
                         </div>
                     ))}
                 </div>
@@ -45,3 +45,4 @@ export default function StatsGridSection() {
         </section>
     );
 }
+
