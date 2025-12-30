@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
@@ -13,7 +13,7 @@ import Image from 'next/image';
 const navLinks = [
   { href: '/#home', label: 'Home' },
   { href: '/#about-us', label: 'About Us' },
-  { href: '/#services', label: 'Services' },
+  { href: '/#services', label: 'Treatments' },
   { href: '/#contact-us', label: 'Contact Us' },
   { href: '/blog', label: 'Blog' },
 ];
@@ -21,8 +21,31 @@ const navLinks = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [activeHash, setActiveHash] = useState('');
 
-  const getLink = (href: string) => {
+  useEffect(() => {
+    const updateActiveHash = () => {
+      setActiveHash(window.location.hash);
+    };
+    updateActiveHash();
+    window.addEventListener('hashchange', updateActiveHash);
+    return () => window.removeEventListener('hashchange', updateActiveHash);
+  }, []);
+
+  const isLinkActive = (href: string) => {
+    const cleanHref = href.split('?')[0];
+
+    if (cleanHref.startsWith('/#')) {
+        const hash = cleanHref.substring(1); // e.g. #services
+        // Active if on homepage and hash matches, or if it's home and no hash
+        if(hash === '#home') return pathname === '/' && (activeHash === '' || activeHash === '#home');
+        return pathname === '/' && activeHash === hash;
+    }
+    
+    return pathname.startsWith(cleanHref) && cleanHref !== '/';
+  };
+
+  const getFinalHref = (href: string) => {
     if (pathname !== '/' && href.startsWith('/#')) {
       return `/${href}`;
     }
@@ -33,17 +56,17 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Image src="https://myloolookscare-images.vercel.app/lookscare.webp" alt="Mylookscare logo" width={140} height={40} />
+          <Image src="https://myloolookscare-images.vercel.app/lookscare.webp" alt="My Looks Care logo" width={140} height={40} />
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-6 text-sm">
           {navLinks.map(({ href, label }) => (
             <Link
               key={label}
-              href={getLink(href)}
+              href={getFinalHref(href)}
               className={cn(
                 'transition-colors hover:text-primary',
-                (pathname === href || (href === '/blog' && pathname.startsWith('/blog'))) ? 'text-primary' : 'text-foreground/60'
+                isLinkActive(href) ? 'text-primary' : 'text-foreground/60'
               )}
             >
               {label}
@@ -71,18 +94,18 @@ export default function Header() {
               <div className="p-4">
                 <div className="flex justify-between items-center mb-8">
                    <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
-                    <Image src="https://myloolookscare-images.vercel.app/lookscare.webp" alt="Mylookscare logo" width={140} height={40} />
+                    <Image src="https://myloolookscare-images.vercel.app/lookscare.webp" alt="My Looks Care logo" width={140} height={40} />
                   </Link>
                 </div>
                 <nav className="flex flex-col gap-6 text-lg">
                   {navLinks.map(({ href, label }) => (
                     <Link
                       key={label}
-                      href={getLink(href)}
+                      href={getFinalHref(href)}
                       onClick={() => setIsMenuOpen(false)}
                       className={cn(
                         'transition-colors hover:text-primary',
-                         (pathname === href || (href === '/blog' && pathname.startsWith('/blog'))) ? 'text-primary' : 'text-foreground'
+                         isLinkActive(href) ? 'text-primary' : 'text-foreground'
                       )}
                     >
                       {label}

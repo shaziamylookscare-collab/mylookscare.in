@@ -7,8 +7,8 @@ import Footer from '@/components/layout/footer';
 import BottomNav from '@/components/layout/bottom-nav';
 
 export const metadata: Metadata = {
-  title: 'Mylookscare',
-  description: 'Your trusted partner in beauty and wellness.',
+  title: 'My Looks Care – Premier Hair & Skin Clinic in Panjim, Goa',
+  description: 'Welcome to My Looks Care, a leading hair transplant and cosmetic skin clinic in Panjim, Goa offering trusted solutions for hair restoration, laser skin treatments, and personalized cosmetic care.',
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </head>

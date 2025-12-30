@@ -7,33 +7,33 @@ import Link from 'next/link';
 const services = [
   {
     id: 'service-1',
-    title: 'Laser Hair Removal',
-    description: 'State-of-the-art laser technology for permanent hair reduction.',
+    title: 'Hair Transplant (FUE & FUT)',
+    description: 'Natural-looking hair restoration for both men and women.',
   },
   {
     id: 'service-2',
-    title: 'Skin Rejuvenation',
-    description: 'Revitalize your skin, reduce wrinkles, and improve texture.',
+    title: 'Hair Loss Management',
+    description: 'Customized care for thinning hair and hairfall.',
   },
   {
     id: 'service-3',
-    title: 'Botox & Fillers',
-    description: 'Smooth out lines and restore facial volume with our expert injectors.',
+    title: 'Laser Hair Removal',
+    description: 'Advanced laser technology for smooth, hair-free skin.',
   },
   {
     id: 'service-4',
-    title: 'Chemical Peels',
-    description: 'Exfoliate and improve your skin’s appearance for a radiant glow.',
+    title: 'Skin Polishing & Brightening',
+    description: 'Rejuvenate your skin and enhance its natural glow.',
   },
   {
     id: 'service-5',
-    title: 'Microneedling',
-    description: 'Stimulate collagen production to improve scars and skin texture.',
+    title: 'Skin Tag / Wart / Scar Removal',
+    description: 'Safe and effective dermatological procedures for clear skin.',
   },
   {
     id: 'service-6',
-    title: 'Hydrafacial',
-    description: 'A multi-step treatment to cleanse, exfoliate, and hydrate your skin.',
+    title: 'Face & Body Tightening',
+    description: 'Non-surgical treatments to improve firmness and tone.',
   },
 ];
 
@@ -43,7 +43,7 @@ export default function OurServicesSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-            Our Services
+            Our Hair & Skin Treatments
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             We offer a wide range of treatments to help you achieve your beauty goals.
@@ -53,7 +53,7 @@ export default function OurServicesSection() {
           {services.map((service) => {
             const serviceImage = PlaceHolderImages.find(p => p.id === service.id);
             return (
-              <Card key={service.id} className="overflow-hidden group">
+              <Card key={service.id} className="overflow-hidden group shadow-md hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-w-3 aspect-h-2">
                   {serviceImage && (
                     <Image
@@ -72,7 +72,7 @@ export default function OurServicesSection() {
                 <CardContent>
                   <CardDescription>{service.description}</CardDescription>
                   <Button variant="link" asChild className="p-0 mt-4">
-                    <Link href="/#contact-us">Learn More &rarr;</Link>
+                    <Link href="/#contact-us">Book Now &rarr;</Link>
                   </Button>
                 </CardContent>
               </Card>

@@ -25,16 +25,16 @@ export default function AboutSection() {
           </div>
           <div>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-              About Mylookscare
+              About My Looks Care
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              Founded with a passion for enhancing natural beauty, Mylookscare is a premier aesthetic clinic dedicated to providing personalized, high-quality care. Our team of experienced professionals utilizes the latest advancements in cosmetic technology to deliver exceptional results in a safe and welcoming environment.
+              My Looks Care (formerly Looks Cosmetic Clinic) is a trusted hair and skin clinic with over 20 years of expertise. We specialize in advanced treatments such as FUE hair transplant, laser hair removal, and skin rejuvenation tailored for Indian skin and hair types.
             </p>
             <p className="mt-4 text-lg text-muted-foreground">
               We believe in a holistic approach to beauty and wellness, focusing on treatments that not only improve your appearance but also boost your confidence. Your journey with us is a partnership, and we are committed to helping you achieve your desired look with integrity and expertise.
             </p>
             <Button size="lg" asChild className="mt-8">
-              <Link href="/#contact-us">Meet The Team</Link>
+              <Link href="/#contact-us">Book a Consultation</Link>
             </Button>
           </div>
         </div>

@@ -8,25 +8,25 @@
   }
   
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
-    --primary: 38 92% 50%;
-    --primary-foreground: 224 71.4% 4.1%;
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 224 71.4% 4.1%;
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 43.1%;
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 224 71.4% 4.1%;
+    --background: 21 71% 91%; /* Pale Peach */
+    --foreground: 240 10% 3.9%;
+    --card: 21 50% 86%; /* Lighter Pale Peach */
+    --card-foreground: 240 10% 3.9%;
+    --popover: 21 50% 86%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 0 83% 75%; /* Soft Coral */
+    --primary-foreground: 240 10% 3.9%;
+    --secondary: 270 26% 86%; /* Muted Lavender */
+    --secondary-foreground: 240 10% 3.9%;
+    --muted: 21 40% 88%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 270 26% 86%; /* Muted Lavender */
+    --accent-foreground: 240 10% 3.9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 38 92% 50%;
+    --border: 21 20% 75%;
+    --input: 21 20% 75%;
+    --ring: 0 83% 75%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -38,25 +38,25 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 38 92% 50%;
-    --primary-foreground: 224 71.4% 4.1%;
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 5% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 5% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 72% 51%; /* Darker Coral */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 270 20% 70%; /* Darker Lavender */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 4% 64%;
+    --accent: 270 20% 70%;
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 38 92% 50%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 0 72% 51%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

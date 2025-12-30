@@ -5,23 +5,23 @@ const features = [
   {
     icon: <Stethoscope className="h-10 w-10 text-primary" />,
     title: 'Expert Team',
-    description: 'Our certified professionals have years of experience and are dedicated to providing the best care.',
+    description: 'Our team has 20+ years of experience in hair and skin wellness.',
   },
   {
     icon: <Cpu className="h-10 w-10 text-primary" />,
     title: 'Advanced Technology',
-    description: 'We use the latest, state-of-the-art technology and equipment for all our treatments.',
+    description: 'We use state-of-the-art facilities and advanced technology for all our treatments.',
   },
   {
     icon: <HeartHandshake className="h-10 w-10 text-primary" />,
     title: 'Personalized Care',
-    description: 'Every treatment is tailored to your unique needs and goals for the best possible results.',
+    description: 'Personalized treatment plans for every individual to achieve the best results.',
   },
 ];
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-16 sm:py-24 bg-background">
+    <section className="py-16 sm:py-24 bg-card">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
@@ -33,7 +33,7 @@ export default function WhyChooseUsSection() {
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <Card key={index} className="text-center bg-card border hover:border-primary/50 hover:shadow-lg transition-all duration-300">
+            <Card key={index} className="text-center bg-background border rounded-lg shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300">
               <CardHeader className="items-center">
                 <div className="bg-primary/10 p-4 rounded-full">
                   {feature.icon}

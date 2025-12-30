@@ -13,85 +13,81 @@ export type Post = {
 
 const blogPosts: Omit<Post, 'image' | 'imageHint'>[] = [
   {
-    slug: 'the-ultimate-guide-to-glowing-skin',
-    title: 'The Ultimate Guide to a Glowing Skin Routine',
-    author: 'Dr. Emily Carter',
+    slug: 'fue-hair-transplant-guide',
+    title: 'A Complete Guide to FUE Hair Transplant',
+    author: 'My Looks Care Team',
     date: '2024-07-15',
-    excerpt: 'Discover the secrets to radiant skin with our comprehensive guide. From daily cleansers to weekly treatments, we cover everything you need to know.',
-    content: `<p>Achieving glowing skin is a goal for many, but it often feels like a moving target. The secret isn't a single magical product, but rather a consistent and well-rounded routine tailored to your skin type. Here's our ultimate guide to building a routine that brings out your natural radiance.</p>
+    excerpt: 'Considering an FUE hair transplant? Here’s everything you need to know about this advanced hair restoration technique, from the procedure to recovery.',
+    content: `<p>Follicular Unit Extraction (FUE) is a revolutionary hair transplant technique that offers natural-looking results with minimal downtime. If you're struggling with hair loss, here’s what you need to know about FUE at My Looks Care.</p>
     
-    <h2>1. The Foundation: Cleansing</h2>
-    <p>Start and end your day by washing your face. A gentle cleanser removes dirt, oil, and impurities without stripping your skin of its natural moisture. For oily or acne-prone skin, a cleanser with salicylic acid can be beneficial. For dry or sensitive skin, opt for a creamy, hydrating formula.</p>
+    <h2>What is FUE?</h2>
+    <p>FUE is a method where individual hair follicles are extracted directly from a donor area (typically the back of the scalp) and transplanted to the balding or thinning areas. Unlike traditional methods, it doesn’t leave a linear scar, making it a popular choice.</p>
     
-    <h2>2. Tone It Up</h2>
-    <p>Toner is a fast-penetrating liquid that delivers a quick hit of hydration and helps remove any last traces of debris. Look for toners with ingredients like hyaluronic acid, glycerin, and rosewater.</p>
+    <h2>The Procedure</h2>
+    <p>The process is performed under local anesthesia. Our expert surgeons use a micro-punch tool to extract each follicular unit. These grafts are then carefully implanted into the recipient area, following your natural hair growth pattern to ensure a seamless result.</p>
     
-    <h2>3. Serums: The Power-Players</h2>
-    <p>Serums are concentrated treatments that target specific skin concerns. A Vitamin C serum in the morning can protect your skin from free radicals and brighten your complexion. In the evening, a retinol serum can help with fine lines, wrinkles, and texture.</p>
+    <h2>Benefits of FUE</h2>
+    <ul>
+      <li>No linear scarring, allowing for short hairstyles.</li>
+      <li>Faster recovery time compared to other methods.</li>
+      <li>Minimal discomfort during and after the procedure.</li>
+      <li>Natural and permanent results.</li>
+    </ul>
     
-    <h2>4. Moisturize, Moisturize, Moisturize</h2>
-    <p>Moisturizer is non-negotiable, regardless of your skin type. It helps to lock in all the goodness from the previous steps and keeps your skin's barrier healthy. Choose a lightweight, oil-free moisturizer for oily skin and a richer cream for dry skin.</p>
+    <h2>Recovery and Results</h2>
+    <p>Most patients can return to their daily activities within a few days. The transplanted hair will shed initially, but new growth will begin in 3-4 months. You can expect to see significant results within 9-12 months.</p>
     
-    <h2>5. Don't Forget Sunscreen</h2>
-    <p>Sunscreen is the most critical step in any skincare routine. It protects your skin from harmful UV rays, which are the primary cause of premature aging and skin cancer. Use a broad-spectrum SPF of 30 or higher every single day, even when it's cloudy.</p>
-    
-    <p>By following these steps consistently, you'll be well on your way to achieving the healthy, glowing skin you've always wanted. Remember, patience is key—it can take several weeks to see results from a new routine.</p>`,
+    <p>At My Looks Care, we pride ourselves on our 20+ years of experience in providing successful FUE hair transplants. Schedule a consultation to find out if this treatment is right for you.</p>`,
   },
   {
-    slug: 'benefits-of-hydrafacial',
-    title: '5 Surprising Benefits of a Regular Hydrafacial',
-    author: 'Dr. Ben Richards',
+    slug: 'laser-hair-removal-benefits',
+    title: 'The Top 5 Benefits of Laser Hair Removal',
+    author: 'My Looks Care Team',
     date: '2024-06-28',
-    excerpt: 'Hydrafacial is more than just a facial. Learn about the surprising benefits of this popular treatment, from improving texture to boosting hydration.',
-    content: `<p>The Hydrafacial has taken the skincare world by storm, and for good reason. This multi-step treatment cleanses, exfoliates, extracts, and hydrates the skin, leaving it looking and feeling refreshed. But its benefits go beyond just a temporary glow. Here are five surprising advantages of incorporating regular Hydrafacials into your skincare regimen.</p>
+    excerpt: 'Tired of endless shaving and waxing? Discover the long-term benefits of laser hair removal and why it’s a leading choice for smooth, hair-free skin.',
+    content: `<p>Laser hair removal is one of the most popular cosmetic treatments worldwide, and for good reason. It offers a safe, effective, and long-term solution to unwanted hair. Here are the top five benefits.</p>
 
-    <h2>1. Works for Virtually All Skin Types</h2>
-    <p>Whether you have sensitive, oily, dry, or combination skin, the Hydrafacial is likely a great option for you. The treatment is highly customizable, allowing your esthetician to tailor the serums and suction power to your specific needs.</p>
+    <h2>1. Precision</h2>
+    <p>Lasers can selectively target dark, coarse hairs while leaving the surrounding skin undamaged. This makes it ideal for treating sensitive areas with precision.</p>
     
-    <h2>2. Consistent and Immediate Results</h2>
-    <p>Unlike some treatments that require downtime or a long waiting period to see results, the Hydrafacial delivers an instant "wow" factor. Clients often leave the clinic with visibly smoother, more radiant skin. The results are also remarkably consistent, thanks to the patented technology that controls every aspect of the treatment.</p>
+    <h2>2. Speed</h2>
+    <p>Each laser pulse takes a fraction of a second and can treat many hairs at the same time. Small areas like the upper lip can be treated in under a minute, and large areas, like the back or legs, may take up to an hour.</p>
     
-    <h2>3. Addresses Multiple Skin Concerns at Once</h2>
-    <p>The Hydrafacial isn't a one-trick pony. It can effectively address a variety of concerns simultaneously, including:</p>
-    <ul>
-      <li>Fine lines and wrinkles</li>
-      <li>Elasticity and firmness</li>
-      <li>Uneven tone and vibrancy</li>
-      <li>Skin texture</li>
-      <li>Brown spots</li>
-      <li>Oily and congested skin</li>
-      <li>Enlarged pores</li>
-    </ul>
+    <h2>3. Cost-Effective in the Long Run</h2>
+    <p>While the initial cost may seem high, laser hair removal can save you money over time. Think of the endless costs of razors, shaving creams, and waxing appointments you’ll no longer need.</p>
     
-    <h2>4. Painless Extractions</h2>
-    <p>If you've ever had manual extractions during a facial, you know they can be uncomfortable. The Hydrafacial uses a unique, spiral-tipped vortex suction to dislodge and remove impurities from pores without the painful squeezing. It's a gentle yet highly effective way to achieve a deep clean.</p>
+    <h2>4. Prevents Ingrown Hairs</h2>
+    <p>Laser hair removal is an excellent option for people who suffer from ingrown hairs. By destroying the hair at the root, it prevents it from curling back or growing sideways into the skin.</p>
     
-    <h2>5. Boosts Overall Skin Health</h2>
-    <p>By infusing the skin with potent antioxidants, peptides, and hyaluronic acid, the Hydrafacial does more than just improve its appearance—it enhances its health. Regular treatments can help to build a stronger skin barrier, improve hydration levels, and protect against environmental damage, leading to healthier skin in the long run.</p>`,
+    <h2>5. Long-Lasting Results</h2>
+    <p>Most patients experience permanent hair loss after an average of three to seven sessions. While you might need a maintenance session every year or so, you'll enjoy smooth skin for a very long time.</p>
+    
+    <p>At My Looks Care, we use advanced laser technology tailored for Indian skin types to ensure the safest and most effective results.</p>`,
   },
   {
-    slug: 'debunking-skincare-myths',
-    title: 'Top 3 Skincare Myths Debunked by Dermatologists',
-    author: 'Dr. Chloe Davis',
+    slug: 'rejuvenate-your-skin',
+    title: 'How to Rejuvenate Your Skin for a Lasting Glow',
+    author: 'My Looks Care Team',
     date: '2024-06-10',
-    excerpt: 'Tired of conflicting skincare advice? We asked dermatologists to debunk three of the most common skincare myths to help you care for your skin correctly.',
-    content: `<p>With so much information available online, it can be hard to separate fact from fiction when it comes to skincare. To clear up the confusion, we've consulted with dermatologists to debunk three of the most persistent skincare myths.</p>
+    excerpt: 'Unlock radiant, youthful skin with our expert tips and treatments. From skin polishing to advanced tightening, learn how to achieve a lasting glow.',
+    content: `<p>Everyone desires glowing, youthful skin. At My Looks Care, we combine at-home care with professional treatments to help you achieve the best skin of your life.</p>
 
-    <h2>Myth #1: You Don't Need Moisturizer if You Have Oily Skin</h2>
-    <p>This is one of the most common misconceptions. Many people with oily skin skip moisturizer, fearing it will make their skin even greasier. However, the opposite is often true. When you strip oily skin of its natural moisture (often with harsh, drying cleansers), it can go into overdrive and produce even more oil to compensate. The key is to choose the right moisturizer. Look for lightweight, oil-free, non-comedogenic formulas that will hydrate your skin without clogging pores.</p>
+    <h2>1. Consistent At-Home Routine</h2>
+    <p>A good skincare routine is the foundation. It should include a gentle cleanser, a hydrating moisturizer, and, most importantly, a broad-spectrum sunscreen with at least SPF 30. Sun protection is the number one anti-aging tool.</p>
     
-    <h2>Myth #2: The Higher the SPF, the Better the Protection</h2>
-    <p>While a higher SPF does offer more protection, the increase is marginal once you get above SPF 30. For example:</p>
-    <ul>
-      <li>SPF 15 blocks about 93% of UVB rays.</li>
-      <li>SPF 30 blocks about 97% of UVB rays.</li>
-      <li>SPF 50 blocks about 98% of UVB rays.</li>
-      <li>SPF 100 blocks about 99% of UVB rays.</li>
-    </ul>
-    <p>More important than a super-high SPF is applying it correctly and consistently. Most people don't apply enough sunscreen to achieve the stated SPF level. You should use about a shot glass full for your body and a nickel-sized dollop for your face, and reapply every two hours, or more often if you're swimming or sweating.</p>
+    <h2>2. Skin Polishing and Brightening</h2>
+    <p>Professional treatments like skin polishing (microdermabrasion) gently exfoliate the top layer of dead skin cells, revealing a smoother, brighter complexion underneath. It helps reduce fine lines, sun damage, and minor scars.</p>
     
-    <h2>Myth #3: Natural or "Clean" Ingredients Are Always Better</h2>
-    <p>The terms "natural" and "clean" are not regulated in the beauty industry, so they can mean different things to different brands. While many natural ingredients are beneficial, not all synthetic ingredients are bad, and not all natural ingredients are safe. For example, essential oils and plant extracts can be potent allergens for some people. The effectiveness and safety of an ingredient depend on its chemical composition, concentration, and how it's formulated, not just whether it's derived from nature or a lab. It's more important to focus on evidence-based ingredients and formulations that are proven to be effective and suitable for your skin type.</p>`,
+    <h2>3. Stay Hydrated and Eat Well</h2>
+    <p>What you put inside your body is as important as what you put on your skin. Drinking plenty of water and eating a diet rich in antioxidants, vitamins, and minerals will support your skin's health from the inside out.</p>
+    
+    <h2>4. Non-Surgical Face & Body Tightening</h2>
+    <p>For those looking for a lift without surgery, non-surgical tightening treatments use technologies like radiofrequency to heat the deeper layers of your skin. This stimulates collagen production, leading to firmer, tighter skin over time.</p>
+    
+    <h2>5. Get Enough Sleep</h2>
+    <p>Your skin repairs itself while you sleep. Aim for 7-9 hours of quality sleep per night to allow this natural rejuvenation process to happen.</p>
+    
+    <p>Combining a healthy lifestyle with targeted treatments from our experienced team at My Looks Care can help you achieve and maintain that coveted glow.</p>`,
   },
 ];
 
