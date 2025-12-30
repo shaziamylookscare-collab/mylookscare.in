@@ -32,12 +32,12 @@ export default function StatsGridSection() {
     return (
         <section className="pb-16 sm:pb-24 bg-card">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-row flex-wrap justify-center gap-x-8 gap-y-4 text-center">
+                <div className="flex flex-row justify-center items-center gap-x-8 gap-y-4 text-center">
                     {stats.map((stat, index) => (
                         <div key={index} className="flex flex-col items-center p-2">
                             <div className="mb-2">{stat.icon}</div>
                             <p className="text-3xl font-extrabold text-foreground">{stat.value}</p>
-                            <p className="text-base text-muted-foreground">{stat.label}</p>
+                            <p className="text-base text-muted-foreground whitespace-nowrap">{stat.label}</p>
                         </div>
                     ))}
                 </div>
