@@ -2,11 +2,9 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Button } from '@/components/ui/button';
 
 const offers = [
   {
@@ -66,13 +64,6 @@ export default function OffersSection() {
                           />
                         )}
                       </div>
-                      <CardContent className="p-6">
-                        <h3 className="text-xl font-bold font-headline mb-2">{offer.title}</h3>
-                        <p className="text-muted-foreground mb-4">{offer.description}</p>
-                         <Button asChild>
-                           <Link href="/#contact-us">Claim Offer</Link>
-                         </Button>
-                      </CardContent>
                     </Card>
                   </div>
                 </CarouselItem>
