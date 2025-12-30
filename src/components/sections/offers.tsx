@@ -1,9 +1,8 @@
-
 'use client';
 
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const offers = [
@@ -70,8 +69,6 @@ export default function OffersSection() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious className="ml-8" />
-          <CarouselNext className="mr-8" />
         </Carousel>
       </div>
     </section>
