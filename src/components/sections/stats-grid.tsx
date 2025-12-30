@@ -12,17 +12,17 @@ const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const stats = [
     {
-        icon: <Award className="h-12 w-12 text-primary" />,
+        icon: <Award className="h-10 w-10 text-primary" />,
         value: '21+',
         label: 'Years of Experience',
     },
     {
-        icon: <Smile className="h-12 w-12 text-primary" />,
+        icon: <Smile className="h-10 w-10 text-primary" />,
         value: '25,000+',
         label: 'Happy Clients',
     },
     {
-        icon: <GoogleIcon className="h-12 w-12" />,
+        icon: <GoogleIcon className="h-10 w-10" />,
         value: '4.9',
         label: 'Google Rating',
     },
@@ -32,12 +32,12 @@ export default function StatsGridSection() {
     return (
         <section className="pb-16 sm:pb-24 bg-card">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="mt-12 flex flex-nowrap overflow-x-auto sm:overflow-visible sm:flex-wrap sm:justify-center gap-8 text-center">
+                <div className="flex flex-row flex-wrap justify-center gap-x-8 gap-y-4 text-center">
                     {stats.map((stat, index) => (
-                        <div key={index} className="flex flex-col items-center flex-shrink-0 w-48 sm:w-auto">
-                            <div className="mb-4">{stat.icon}</div>
-                            <p className="text-4xl font-extrabold text-foreground">{stat.value}</p>
-                            <p className="text-lg text-muted-foreground">{stat.label}</p>
+                        <div key={index} className="flex flex-col items-center p-2">
+                            <div className="mb-2">{stat.icon}</div>
+                            <p className="text-3xl font-extrabold text-foreground">{stat.value}</p>
+                            <p className="text-base text-muted-foreground">{stat.label}</p>
                         </div>
                     ))}
                 </div>
