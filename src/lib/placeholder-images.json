@@ -119,6 +119,12 @@
       "description": "Laser hair removal offer",
       "imageUrl": "https://myloolookscare-images.vercel.app/laser-hair-removal.webp",
       "imageHint": "laser removal"
+    },
+    {
+      "id": "offer-6",
+      "description": "Hair transplant offer",
+      "imageUrl": "https://myloolookscare-images.vercel.app/hair-transplant-goa.webp",
+      "imageHint": "hair transplant"
     }
   ]
 }
