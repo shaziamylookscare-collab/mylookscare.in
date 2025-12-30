@@ -6,6 +6,7 @@ import AboutSection from '@/components/sections/about';
 import ContactSection from '@/components/sections/contact';
 import StatsSection from '@/components/sections/stats';
 import StatsGridSection from '@/components/sections/stats-grid';
+import OffersSection from '@/components/sections/offers';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <StatsGridSection />
+      <OffersSection />
       <AboutSection />
       <OurServicesSection />
       <WhyChooseUsSection />

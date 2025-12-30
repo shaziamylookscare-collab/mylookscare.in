@@ -89,6 +89,30 @@
       "description": "A map showing the location of the My Looks Care clinic in Panjim, Goa.",
       "imageUrl": "https://images.unsplash.com/photo-1588859959601-12d5ecb1b354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxHb2ElMjBtYXB8ZW58MHx8fHwxNzY3MDk4NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Goa map"
+    },
+    {
+      "id": "offer-1",
+      "description": "Image related to a hair transplant offer.",
+      "imageUrl": "https://images.unsplash.com/photo-1617257485487-da9a7a6d95e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYWlyJTIwdHJhbnNwbGFudHxlbnwwfHx8fDE3NjcwOTg1Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hair transplant"
+    },
+    {
+      "id": "offer-2",
+      "description": "Image for a laser hair removal package deal.",
+      "imageUrl": "https://images.unsplash.com/photo-1700760933941-3a06a28fbf47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsYXNlciUyMHRyZWF0bWVudHxlbnwwfHx8fDE3NjcxMDAzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser treatment"
+    },
+    {
+      "id": "offer-3",
+      "description": "Image representing a free skin consultation.",
+      "imageUrl": "https://images.unsplash.com/photo-1761718209694-70031ee64f82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxza2luJTIwY29uc3VsdGF0aW9ufGVufDB8fHx8MTc2NzEwMDM4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "skin consultation"
+    },
+    {
+      "id": "offer-4",
+      "description": "Image for a bridal glow package.",
+      "imageUrl": "https://images.unsplash.com/photo-1641699862936-be9f49b1c38d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmlkYWwlMjBtYWtldXB8ZW58MHx8fHwxNzY3MDIwNDYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bridal makeup"
     }
   ]
 }
