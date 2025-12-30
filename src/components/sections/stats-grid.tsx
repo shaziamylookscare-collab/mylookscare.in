@@ -1,5 +1,7 @@
+'use client';
 
 import { Award, Smile } from 'lucide-react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px" {...props}>
@@ -9,6 +11,84 @@ const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
        <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.574l6.19,5.238C39.99,35.508,44,30.026,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
     </svg>
 );
+
+const AnimatedNumber = ({ value, label }: { value: string, label: string }) => {
+    const [count, setCount] = useState(0);
+    const targetValue = parseFloat(value.replace(/,/g, ''));
+    const suffix = value.replace(/[0-9.,]/g, '');
+    const isFloat = value.includes('.');
+    const ref = useRef<HTMLParagraphElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect();
+                }
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isVisible) return;
+
+        let start = 0;
+        const duration = 2000;
+        const startTime = performance.now();
+
+        const animate = (currentTime: number) => {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+            let currentCount = progress * targetValue;
+            
+            if (isFloat) {
+                setCount(parseFloat(currentCount.toFixed(1)));
+            } else {
+                setCount(Math.floor(currentCount));
+            }
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                 if (isFloat) {
+                    setCount(targetValue);
+                } else {
+                    setCount(Math.floor(targetValue));
+                }
+            }
+        };
+
+        requestAnimationFrame(animate);
+
+    }, [isVisible, targetValue, isFloat]);
+    
+    const displayValue = isFloat ? count.toFixed(1) : Math.floor(count).toLocaleString();
+
+    return (
+        <div className="flex flex-col items-center p-1 sm:p-2">
+            <p ref={ref} className="text-2xl font-extrabold text-foreground">
+              {displayValue}{suffix}
+            </p>
+            <p className="text-xs sm:text-base text-muted-foreground whitespace-nowrap">{label}</p>
+        </div>
+    );
+};
+
 
 const stats = [
     {
@@ -32,12 +112,11 @@ export default function StatsGridSection() {
     return (
         <section className="pb-16 sm:pb-24 bg-card">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-row justify-center items-center gap-x-2 sm:gap-x-8 text-center">
+                <div className="flex flex-row justify-center items-start gap-x-2 sm:gap-x-8 text-center">
                     {stats.map((stat, index) => (
-                        <div key={index} className="flex flex-col items-center p-1 sm:p-2">
-                            <div className="mb-1">{stat.icon}</div>
-                            <p className="text-2xl font-extrabold text-foreground">{stat.value}</p>
-                            <p className="text-xs sm:text-base text-muted-foreground whitespace-nowrap">{stat.label}</p>
+                        <div key={index} className="flex flex-col items-center">
+                             <div className="mb-1">{stat.icon}</div>
+                            <AnimatedNumber value={stat.value} label={stat.label} />
                         </div>
                     ))}
                 </div>
@@ -45,4 +124,3 @@ export default function StatsGridSection() {
         </section>
     );
 }
-
