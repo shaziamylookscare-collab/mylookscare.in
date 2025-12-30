@@ -26,6 +26,11 @@ const offers = [
     title: 'Bridal Glow Package',
     description: 'Get ready for your big day with our exclusive bridal package for a radiant glow.',
   },
+  {
+    id: 'offer-5',
+    title: 'Laser Hair Removal Offer',
+    description: 'Special offer on laser hair removal.',
+  },
 ];
 
 export default function OffersSection() {
@@ -74,3 +79,5 @@ export default function OffersSection() {
     </section>
   );
 }
+
+    
