@@ -1,3 +1,4 @@
+
 import { Award, Smile } from 'lucide-react';
 
 const GoogleIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -31,9 +32,9 @@ export default function StatsGridSection() {
     return (
         <section className="pb-16 sm:pb-24 bg-card">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+                <div className="mt-12 flex flex-nowrap overflow-x-auto sm:overflow-visible sm:flex-wrap sm:justify-center gap-8 text-center">
                     {stats.map((stat, index) => (
-                        <div key={index} className="flex flex-col items-center">
+                        <div key={index} className="flex flex-col items-center flex-shrink-0 w-48 sm:w-auto">
                             <div className="mb-4">{stat.icon}</div>
                             <p className="text-4xl font-extrabold text-foreground">{stat.value}</p>
                             <p className="text-lg text-muted-foreground">{stat.label}</p>
