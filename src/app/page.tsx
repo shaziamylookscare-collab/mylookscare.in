@@ -3,12 +3,14 @@ import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import OurServicesSection from '@/components/sections/our-services';
 import AboutSection from '@/components/sections/about';
 import ContactSection from '@/components/sections/contact';
+import StatsSection from '@/components/sections/stats';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <AboutSection />
+      <StatsSection />
       <OurServicesSection />
       <WhyChooseUsSection />
       <ContactSection />
